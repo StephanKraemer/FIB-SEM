@@ -34,12 +34,12 @@ become quickly unclear and hard to decipher, and despite possible variability th
 some of those issues.
 
 - The script uses *Matlab sections* (denoted by the double-percent symbol '%%' in the text) as structuring element. Each section represents *one process step* and the
-overview of currently used processes can be conveniently seen using the 'GoTo' button in the Matlab editor.
+  overview of currently used processes can be conveniently seen using the 'GoTo' button in the Matlab editor.
 - As a result, each Matlab script represents *one particular linear workflow* of image processing tasks. The entire analysis is compactly captured in one script file.
-- A list of processes is stored in a big *template file*. A new script is built by copying the corresponding template sections. Template scripts are provided as
-  starting points.
+- A list of processes is stored in a big [template file](https://github.com/StephanKraemer/FIB-SEM/blob/main/SerialDataAlignTemplate_All.m).
+  A new script is built by copying the corresponding template sections. Template scripts are provided asstarting points.
 - Sections themselves are built following a strict structure. They begin with user input data, followed by definition of parameters and code for the given process,
-and finish saving results into a data structure.
+  and finish saving results into a data structure.
 - A *template section* is provided with instructions for the user which allows to add new processes while maintaining the overall structure of the script.
 
 ### Ease of use
